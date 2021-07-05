@@ -10,6 +10,9 @@ import {
   Description,
 } from "@material-ui/icons"
 
+//assets
+import resumePdf from "../../assets/docs/resume.pdf"
+
 //style
 import NavStyle from "./LargeScreenNav.module.scss"
 
@@ -90,7 +93,7 @@ const LargeScreenNav = () => {
         </li> */}
         <li className={NavStyle.bold}>
           <a
-            href="#resume"
+            href={resumePdf}
             target="_blank"
             className="waves-effect waves-dark grey-text text-darken-3"
           >

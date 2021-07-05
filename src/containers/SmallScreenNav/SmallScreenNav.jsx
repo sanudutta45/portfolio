@@ -7,11 +7,13 @@ import {
   Equalizer,
   School,
   Mail,
-  Create,
   Description,
 } from "@material-ui/icons"
 
 import M from "materialize-css"
+
+//assets
+import resumePdf from "../../assets/docs/resume.pdf"
 
 //scss
 import NavStyle from "./SmallScreenNav.module.scss"
@@ -20,7 +22,7 @@ const SmallScreenNav = () => {
   useEffect(() => {
     const elems = document.querySelectorAll(".sidenav")
     const instance = M.Sidenav.init(elems, {})
-  },[])
+  }, [])
 
   return (
     <Fragment>
@@ -36,7 +38,7 @@ const SmallScreenNav = () => {
           <div className="brown-text light">Full Stack Developer</div>
         </div>
         <button
-        style={{backgroundColor:"#FFF", border:"none"}}
+          style={{ backgroundColor: "#FFF", border: "none" }}
           data-target="side-menu"
           className={`${NavStyle.menu} sidenav-trigger teal-text`}
         >
@@ -44,15 +46,21 @@ const SmallScreenNav = () => {
         </button>
       </nav>
 
-      <ul className="sidenav" id="side-menu" style={{width:"200px"}}>
+      <ul className="sidenav" id="side-menu" style={{ width: "200px" }}>
         <li className={NavStyle.bold}>
-          <a className="waves-effect waves-dark teal-text sidenav-close" href="#about">
+          <a
+            className="waves-effect waves-dark teal-text sidenav-close"
+            href="#about"
+          >
             <Person style={{ fontSize: 30 }} />
             <span>About</span>
           </a>
         </li>
         <li className={NavStyle.bold}>
-          <a href="#experience" className="waves-effect waves-dark cyan-text sidenav-close">
+          <a
+            href="#experience"
+            className="waves-effect waves-dark cyan-text sidenav-close"
+          >
             <TrendingUp style={{ fontSize: 30 }} />
             <span>Experience</span>
           </a>
@@ -64,19 +72,28 @@ const SmallScreenNav = () => {
           </a>
         </li>
         <li className={NavStyle.bold}>
-          <a href="#skills" className="waves-effect waves-dark purple-text sidenav-close">
+          <a
+            href="#skills"
+            className="waves-effect waves-dark purple-text sidenav-close"
+          >
             <Equalizer style={{ fontSize: 30 }} />
             <span>Skills</span>
           </a>
         </li>
         <li className={NavStyle.bold}>
-          <a href="#edu" className="waves-effect waves-dark orange-text sidenav-close">
+          <a
+            href="#edu"
+            className="waves-effect waves-dark orange-text sidenav-close"
+          >
             <School style={{ fontSize: 30 }} />
             <span>Education</span>
           </a>
         </li>
         <li className={NavStyle.bold}>
-          <a href="#contact" className="waves-effect waves-dark brown-text sidenav-close">
+          <a
+            href="#contact"
+            className="waves-effect waves-dark brown-text sidenav-close"
+          >
             <Mail style={{ fontSize: 30 }} />
             <span>Contact</span>
           </a>
@@ -92,7 +109,7 @@ const SmallScreenNav = () => {
         </li> */}
         <li className={NavStyle.bold}>
           <a
-            href="#resume"
+            href={resumePdf}
             target="_blank"
             className="waves-effect waves-dark grey-text text-darken-3"
           >

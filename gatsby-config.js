@@ -5,13 +5,12 @@
  */
 
 module.exports = {
-
-  pathPrefix: "/",
+  pathPrefix: "/portfolio",
   /* Your site meta data */
   siteMetadata: {
-    title: "gatsby_title",
-    siteUrl: "https://#",
-    description: "sanu's",
+    title: "Sanu Dutta",
+    siteUrl: "https://sanudutta45.github.io/portfolio/",
+    description: "sanu's portfolio",
   },
   /* Your site config here */
   plugins: [
@@ -19,12 +18,12 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
-    // {
-    //   resolve: "gatsby-plugin-manifest",
-    //   options: {
-    //     icon: "",
-    //   },
-    // },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/assets/images/blockchainlogo.jfif",
+      },
+    },
     {
       resolve: "gatsby-plugin-webfonts",
       options: {
