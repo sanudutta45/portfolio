@@ -1,0 +1,23 @@
+.centerIcon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hoverLine{
+    margin-left: 15px;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    &:hover{
+        border-bottom: 2px solid;
+    }
+}
+
+.wrapper{
+    margin: 45px 0;
+}
+
+.containerWrapper{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}

@@ -1,42 +1,36 @@
-@import "~bootstrap/scss/bootstrap";
-$grid-gutter-width: 0;
-
 //variables
-$fontSize: 18px;
-$fontWeight: 400;
+$fontSize: 16px;
 $lineHeight: 24px;
 $backgroundColor: #fff;
 $listStyleType: none !default;
-*{
-    box-sizing: border-box;
+$fontColor: #333;
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
 }
 
 body{
-    font-family: 'Nunito', sans-serif;
-    font-size: $fontSize;
-    font-weight: $fontWeight;
-    line-height: 24px;
-    overflow: visible;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -webkit-font-smoothing: antialiased;
+    background: url("../assets/images/bg.png");
 }
 
-ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: $listStyleType;
-}
+// ul{
+//     margin: 0;
+//     padding: 0;
+//     list-style-type: $listStyleType;
+// }
 
-li{
-    padding: 0;
-    margin: 0 ;
-}
+// li{
+//     padding: 0;
+//     margin: 0 ;
+// }
 
-a{
-    text-decoration: none;
-}
+// a{
+//     text-decoration: none;
+// }
 
-p{
-    margin: 0;
-}
+// p{
+//     margin: 0;
+// }

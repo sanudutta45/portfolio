@@ -9,31 +9,31 @@ module.exports = {
   siteMetadata: {
     title: "gatsby_title",
     siteUrl: "https://#",
-    description: "a starter kit",
+    description: "sanu's",
   },
   /* Your site config here */
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-fontawesome-css",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    // {
+    //   resolve: "gatsby-plugin-manifest",
+    //   options: {
+    //     icon: "",
+    //   },
+    // },
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: "gatsby-plugin-webfonts",
       options: {
-        icon: "src/assets/images/firstService.png",
-      },
-    },
-    {
-      resolve: "gatsby-plugin-prefetch-google-fonts",
-      options: {
-        fonts: [
-          {
-            family: "Nunito",
-            variants: ["100","300","400","600"],
-          },
-        ],
-        display: "swap",
+        fonts: {
+          google: [
+            {
+              family: "Roboto",
+              variants: ["100", "300", "400", "600", "700"],
+            },
+          ],
+        },
       },
     },
     {

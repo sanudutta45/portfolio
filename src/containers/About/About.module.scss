@@ -1,0 +1,12 @@
+@import "../../Styles/mixins.scss";
+
+.blockquote{
+    @include fluid_typography(21, 30,10,12, 414, 1440);
+}
+
+.contentWrapper{
+    p{
+        font-weight: 300;
+        @include fluid_typography(18, 25,15,18, 414, 1440);
+    }
+}

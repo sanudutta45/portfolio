@@ -1,0 +1,17 @@
+.sideNav {
+  width: 190px;
+  height: 100% !important;
+}
+
+@media (min-width: 601px) {
+  .main {
+    margin-left: 190px;
+  }
+}
+
+:global(.active){
+    border-left: 4px solid;
+    span{
+        font-weight: 600;
+    }
+}

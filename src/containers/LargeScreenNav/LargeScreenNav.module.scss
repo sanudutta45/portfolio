@@ -1,0 +1,60 @@
+.navWrapper {
+  width: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  width: 190px;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+  will-change: left;
+}
+
+.nav li {
+  width: 100%;
+}
+
+.nav li a {
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  border-bottom: 1px solid #ddd;
+  min-height: 90px;
+  background-color: #fafafa;
+}
+
+
+.logo h3 {
+  font-size: 31.5px;
+  font-weight: 300 !important;
+  margin: 0;
+  letter-spacing: 2px;
+  // padding: 18px auto;
+  margin: 18px auto !important;
+}
+
+.logo span {
+  display: block !important;
+  font-size: 14px;
+  // letter-spacing: none;
+  letter-spacing: initial;
+}
+
+.bold span {
+  margin-left: 20px;
+  font-size: 15px;
+  color: #333333;
+}
+
+.bold a:hover {
+  border-left: 4px solid;
+}

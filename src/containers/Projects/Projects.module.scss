@@ -1,0 +1,25 @@
+.wrapper {
+  margin: 45px 0;
+}
+
+.containerWrapper{
+    margin-top: 35px;
+}
+
+.inline{
+    margin: 0 8px;
+    display: block;
+}
+
+.iconFlex{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 12px;
+    margin-left: 0;
+}
+
+.ul li {
+    list-style-type: disc !important;
+    margin-left: 12px;
+}
