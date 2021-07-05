@@ -5,6 +5,8 @@
  */
 
 module.exports = {
+
+  pathPrefix: "/",
   /* Your site meta data */
   siteMetadata: {
     title: "gatsby_title",
