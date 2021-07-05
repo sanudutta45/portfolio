@@ -10,7 +10,7 @@ import BannerStyle from "./IntroBanner.module.scss"
 const IntroBanner = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "road-ahead.jpg" }) {
+      file(relativePath: { eq: "road_ahead.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000, maxHeight: 667, quality: 100) {
             ...GatsbyImageSharpFluid
