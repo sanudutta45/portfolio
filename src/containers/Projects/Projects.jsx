@@ -334,7 +334,7 @@ const Projects = () => {
                 <div className="card-action">
                   <a
                     aria-label="visit amazon-clone web app"
-                    href="https://github.com/sanudutta45/amazon-clone"
+                    href="https://clone-56a19.web.app/"
                     target="_blank"
                     data-position="top"
                     data-tooltip="view online"
@@ -345,7 +345,7 @@ const Projects = () => {
 
                   <a
                     aria-label="open amazon-clone web app source code in github repo"
-                    href="https://clone-56a19.web.app/"
+                    href="https://github.com/sanudutta45/amazon-clone"
                     target="_blank"
                     data-position="top"
                     data-tooltip="view source"
