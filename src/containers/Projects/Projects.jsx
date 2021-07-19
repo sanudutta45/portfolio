@@ -7,6 +7,7 @@ import MyDriveAppImg from "../../assets/images/my-drive.png"
 import SwrmlabsImg from "../../assets/images/swrmlabs.png"
 import FirstWaveImg from "../../assets/images/firstwave.png"
 import CliffEyeImg from "../../assets/images/cliffeye.png"
+import AmazonCloneImg from "../../assets/images/amazon.png"
 
 //components
 import Title from "../../components/SectionHeader/SectionHeader"
@@ -289,6 +290,62 @@ const Projects = () => {
                   <a
                     aria-label="open cliffeye web app source code in github repo"
                     href=""
+                    target="_blank"
+                    data-position="top"
+                    data-tooltip="view source"
+                    className={`btn-floating btn-large waves-effect waves-light brown tooltipped ${Style.iconFlex}`}
+                  >
+                    <GitHub />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col s12 m6 l4">
+            <div className="card medium">
+              <div className="card-image waves-effect waves-block waves-light">
+                <img
+                  src={AmazonCloneImg}
+                  alt="screenshot of amazon-clone"
+                  className="activator"
+                />
+              </div>
+              <div className="card-content">
+                <span className="card-title activator teal-text">
+                  Amazon's clone
+                  <MoreVert className={`right ${Style.inline}`} />
+                </span>
+                <p>Clone of e-commerce website amazon.com</p>
+              </div>
+              <div className="card-reveal">
+                <span className="card-title brown-text">
+                  Accomplishments
+                  <Close className={`right ${Style.inline}`} />
+                </span>
+
+                <ul className={Style.ul}>
+                  <li>Responsive design</li>
+                  <li>Tailwind CSS</li>
+                  <li>React.js</li>
+                  <li>React Context API</li>
+                  <li>Stripe payment gateway</li>
+                </ul>
+                <div className="card-action">
+                  <a
+                    aria-label="visit amazon-clone web app"
+                    href="https://github.com/sanudutta45/amazon-clone"
+                    target="_blank"
+                    data-position="top"
+                    data-tooltip="view online"
+                    className={`btn-floating btn-large waves-effect waves-light brown tooltipped ${Style.iconFlex}`}
+                  >
+                    <Launch />
+                  </a>
+
+                  <a
+                    aria-label="open amazon-clone web app source code in github repo"
+                    href="https://clone-56a19.web.app/"
                     target="_blank"
                     data-position="top"
                     data-tooltip="view source"
